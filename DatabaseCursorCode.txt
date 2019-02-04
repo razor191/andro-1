@@ -1,0 +1,17 @@
+ String login_id = ed1.getText().toString();
+                String login_pass=ed2.getText().toString();
+
+                DatabaseHelper db=new DatabaseHelper(MainActivity.this);
+                Cursor cr=db.getinformation(login_id);
+
+                while(cr.moveToNext())
+                {
+                    if(login_pass==cr.getString(1))
+                    {
+                        Toast.makeText(getApplicationContext(),"login succesfull",Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(),TesterActivity.class);
+                        startActivity(i);
+                    }
+                }
+
+                Toast.makeText(getApplicationContext(),"acess denied",Toast.LENGTH_SHORT).show();

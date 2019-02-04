@@ -1,0 +1,16 @@
+stable name: empInfo:-
+
+1: Empid;
+2: EmpName:
+2: Status:
+4: JoiningDate:
+5: EndDate:
+6: EmpPic:
+7: CurrentAdd:
+8: PermanentAdd:
+9: PhoneNo:
+10: EmergencyContactNumber:
+11: EmergencyContPersonName:
+12: Role:
+13: Designation:
+14: Remaining leaves:
